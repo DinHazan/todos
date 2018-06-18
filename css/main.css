@@ -1,0 +1,58 @@
+body {
+  background-color:lightcyan;
+}
+
+.todos {
+  padding: 0;
+  list-style: none;
+}
+
+.todo {
+  cursor: pointer;
+  padding: 10px 0;
+  border-bottom: 1px solid gainsboro;
+}
+
+.todo.done {
+  text-decoration: line-through;
+}
+
+.todo .btns {
+  float:right;
+}
+
+.btn {
+  cursor: pointer;
+  color:cadetblue;
+  background-color: aquamarine;
+  border:0;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: cornflowerblue;
+  color:white;
+}
+
+.btn-danger {
+  background-color: lightsalmon;
+}
+
+
+
+
+/* .todo::before {
+  content: " ";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 10px;
+  background-color: aquamarine;
+}
+
+.todo.done::before {
+  content: "\2022";
+} */
+
+
+

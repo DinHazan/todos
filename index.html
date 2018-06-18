@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Todos</title>
+</head>
+
+<body onload="init()">
+    <h1>
+        Todos
+        <span class="active-count"></span>
+        (total:
+        <span class="total-count"></span>)
+    </h1>
+    <select class="todo-sort" onchange="sortToDoBy(this.value)">
+        <option>Txt</option>
+        <option>Created</option>
+        <option>Importance</option>
+    </select>
+    <div class="status-filter" >
+        <button onclick="setFilter(this.innerText)">All</button >
+        <button onclick="setFilter(this.innerText)">Active</button >
+        <button onclick="setFilter(this.innerText)">Done</button >
+    </div>
+    <div class="non-todos-messege"></div>
+    <div class="container">
+        <button class="btn btn-add" onclick="addTodo()">+</button>
+        <ul class="todos">
+
+        </ul>
+
+
+    </div>
+
+
+    <!-- 
+
+  <li class="todo" onclick="todoClicked(this)">
+                <label>
+                    <input type="checkbox" onclick="event.preventDefault()" /> Item 1
+                </label>
+            </li>
+
+
+ -->
+
+
+
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
